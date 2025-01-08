@@ -1,11 +1,12 @@
 const items = [
-  "Welcome 🤗",
-  "E kaabo 🙇🏽‍♂️",
-  "Sannu dazuwa 🤝🏽",
-  " أهلاً وسهلاً👳🏽‍♂️",
-  "Nnọọ 👊🏽",
+  'Welcome 🤗',
+  'E kaabo 🙇🏽‍♂️',
+  'Sannu dazuwa 🤝🏽',
+  ' أهلاً وسهلاً👳🏽‍♂️',
+  'Nnọọ 👊🏽',
+  'good morning😘',
 ];
-const app = document.getElementById("app");
+const app = document.getElementById('app');
 let count = 0;
 let index = 0;
 let typingEffect = () => {
@@ -21,7 +22,7 @@ let typingEffect = () => {
     count = 0;
     index = index + 1 < items.length ? index + 1 : 0;
     setTimeout(() => {
-      app.innerHTML = "";
+      app.innerHTML = '';
       typingEffect();
     }, 1500);
   }
